@@ -22,6 +22,22 @@ Height of multiplication table: 8
   8  16  24  32  40  48  56  64  72  80
 """
 w = input("Width of multiplication table: ")
-h = input("Height of multiplication table: "
-for i in range(w):
-   print(i)
+h = int(input("Height of multiplication table: "))
+print(" ")
+while h > 0:
+    for x in range(1, int(w)+1):
+        print(x, end = " ")
+    h=h-1
+    print(" ")
+    
+    
+print("The number is: {0:>3}".format(1))
+print("The number is: {0:>3}".format(12))
+print("The number is: {0:>3}".format(123))
+
+dinnercost = 15     # cost of dining out
+bankaccount = 150   # dollars
+while h > 0:
+    print("Yumm.. I would love to eat out tonight!")
+    bankaccount = bankaccount - dinnercost
+    print("Uh oh.. I only have ${0} left!".format(bankaccount))
