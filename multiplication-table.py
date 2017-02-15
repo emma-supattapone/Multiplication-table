@@ -1,7 +1,7 @@
 """
 multiplication-table.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Emma Supattapone
+Credit: Abby Feyrer
 Assignment:
 
 Write and submit a Python program that prints a multiplication table. The user 
@@ -23,21 +23,11 @@ Height of multiplication table: 8
 """
 w = input("Width of multiplication table: ")
 h = int(input("Height of multiplication table: "))
+i = 1
 print(" ")
-while h > 0:
+while h >= i:
     for x in range(1, int(w)+1):
-        print(x, end = " ")
-    h=h-1
+            print(i*x, end = " ")
+    i=i+1
     print(" ")
     
-    
-print("The number is: {0:>3}".format(1))
-print("The number is: {0:>3}".format(12))
-print("The number is: {0:>3}".format(123))
-
-dinnercost = 15     # cost of dining out
-bankaccount = 150   # dollars
-while h > 0:
-    print("Yumm.. I would love to eat out tonight!")
-    bankaccount = bankaccount - dinnercost
-    print("Uh oh.. I only have ${0} left!".format(bankaccount))
