@@ -1,7 +1,7 @@
 """
 multiplication-table.py
 Author: Emma Supattapone
-Credit: Abby Feyrer
+Credit: ABBY FEYRER
 Assignment:
 
 Write and submit a Python program that prints a multiplication table. The user 
@@ -27,7 +27,7 @@ i = 1
 print(" ")
 while h >= i:
     for x in range(1, int(w)+1):
-            print(i*x, end = " ")
+            print("{0:>3}".format(i * x), end = " ")
     i=i+1
     print(" ")
     
